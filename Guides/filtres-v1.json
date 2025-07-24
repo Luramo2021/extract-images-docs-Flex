@@ -3,60 +3,60 @@
     "step": 1,
     "title": "Accéder à l’espace Clients",
     "text": "Aller dans l’espace de travail « Clients » via le menu de gauche.",
-    "image_url": "https://drive.google.com/file/d/1yuzDijKj82ueM1PxSspTxUBZvAwtsrrh/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-1.png"
   },
   {
     "step": 2,
     "title": "Ouvrir la rubrique Clients",
     "text": "Cliquer sur la fonctionnalité « Clients » de la rubrique Configuration.",
-    "image_url": "https://drive.google.com/file/d/1xYxVXaG7kwtP8TDN43HV2mq-TaN6fnxX/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-2.png"
   },
   {
     "step": 3,
     "title": "Accéder à la création de filtre",
     "text": "Cliquer sur l’icône de filtre pour commencer la création.",
-    "image_url": "https://drive.google.com/file/d/1tiK2LRXk18KiKxOJrWL0RR8EfMSMjdI7/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-3.png"
   },
   {
     "step": 4,
     "title": "Ajouter un nouveau filtre",
     "text": "Cliquer sur le bouton « + » pour créer un nouveau filtre.",
-    "image_url": "https://drive.google.com/file/d/1p3h3l4RYbGXOuemPieRPPbpIIs7fWIbS/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-4.png"
   },
   {
     "step": 5,
     "title": "Définir les critères du filtre",
     "text": "Choisir la propriété, la condition et la valeur (ex: statut = actif).",
-    "image_url": "https://drive.google.com/file/d/1lJmptJkHhWbeLCI3YAzi1LLo6lF-6qxs/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-5.png"
   },
   {
     "step": 6,
     "title": "Enregistrer le filtre",
     "text": "Cliquer sur Enregistrer, nommer le filtre et valider.",
-    "image_url": "https://drive.google.com/file/d/1kriWkdF5sPi-3oxSvxV3oTV_VJZWgrP2/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-6.png"
   },
   {
     "step": 7,
     "title": "Partager le filtre",
     "text": "Cocher « Partagé » pour rendre le filtre visible aux autres utilisateurs.",
-    "image_url": "https://drive.google.com/file/d/1SZMFN3g05tC2ld8OAk7WW1-1UHea1f66/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-7.png"
   },
   {
     "step": 8,
     "title": "Appliquer le filtre",
     "text": "Cliquer sur le bouton « Appliquer » pour activer le filtre.",
-    "image_url": "https://drive.google.com/file/d/1QzkqZ1_l82J__xv7mgWbQRLcsF9wJKby/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-8.png"
   },
   {
     "step": 9,
     "title": "Vérifier l’ajout du filtre",
     "text": "S’assurer que l’onglet correspondant au filtre s’affiche.",
-    "image_url": "https://drive.google.com/file/d/11YK-jS5MLfC6SLJJKlZikFaZmRhJ-Xqh/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-9.png"
   },
   {
     "step": 10,
     "title": "Supprimer un filtre",
     "text": "Retourner sur l’icône filtre, cocher un filtre existant et cliquer sur « effacer ».",
-    "image_url": "https://drive.google.com/file/d/11YK-jS5MLfC6SLJJKlZikFaZmRhJ-Xqh/preview"
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-10.png"
   }
 ]
