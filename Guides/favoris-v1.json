@@ -1,0 +1,38 @@
+[
+  {
+    "step": 1,
+    "title": "Accéder à l’espace souhaité",
+    "text": "Rendez-vous dans l’espace contenant l’élément à ajouter aux favoris (ex : Clients).",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-1.png"
+  },
+  {
+    "step": 2,
+    "title": "Survoler le nom de la vue",
+    "text": "Placez la souris sur le nom de la vue ou de l’élément à ajouter aux favoris.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-2.png"
+  },
+  {
+    "step": 3,
+    "title": "Cliquer sur l’étoile",
+    "text": "Cliquez sur l’icône étoile qui apparaît à gauche du nom. Une étoile orange indique que l’élément est désormais dans les favoris.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-3.png"
+  },
+  {
+    "step": 4,
+    "title": "Vérifier dans le menu Favoris",
+    "text": "L’élément apparaît désormais dans la rubrique Favoris à gauche de l’écran.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-4.png"
+  },
+  {
+    "step": 5,
+    "title": "Accès rapide par les Favoris",
+    "text": "Cliquez sur l’élément dans la rubrique Favoris pour y accéder rapidement.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-5.png"
+  },
+  {
+    "step": 6,
+    "title": "Retirer un Favori",
+    "text": "Pour retirer un favori, répétez l’opération et cliquez de nouveau sur l’étoile pour la désactiver.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-6.png"
+  }
+]
