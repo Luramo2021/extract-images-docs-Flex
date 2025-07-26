@@ -1,0 +1,10 @@
+[
+  {
+    "filename": "filtres-v1.json",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients."
+  },
+  {
+    "filename": "favoris-v1.json",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil."
+  }
+]
