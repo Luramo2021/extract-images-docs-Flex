@@ -4,3 +4,4 @@ python-dotenv
 flask
 numpy
 scikit-learn
+gunicorn
