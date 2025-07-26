@@ -1,0 +1,38 @@
+[
+  {
+    "step": 1,
+    "title": "Accéder à la configuration",
+    "text": "Dans le menu, cliquez sur « Voir plus », puis sélectionnez « Configuration ».",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-1.png"
+  },
+  {
+    "step": 2,
+    "title": "Accéder aux sociétés",
+    "text": "Cliquez sur « Sociétés » dans le menu latéral pour afficher la liste des sociétés.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-2.png"
+  },
+  {
+    "step": 3,
+    "title": "Ouvrir la fiche société",
+    "text": "Cliquez sur le code société en bleu ou effectuez un double clic sur la ligne pour ouvrir la fiche société.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-3.png"
+  },
+  {
+    "step": 4,
+    "title": "Ajouter les CGV sur un devis",
+    "text": "Allez dans l’onglet « CGV DEVIS », collez vos CGV dans la zone prévue, puis cliquez sur « Enregistrer ».",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-4.png"
+  },
+  {
+    "step": 5,
+    "title": "Ajouter les CGV sur une facture",
+    "text": "Répétez les mêmes étapes, puis rendez-vous dans l’onglet « CGV FACTURE », collez vos CGV et enregistrez.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-5.png"
+  },
+  {
+    "step": 6,
+    "title": "Confirmation de l’enregistrement",
+    "text": "Une fois vos CGV enregistrées, elles seront automatiquement intégrées aux devis et factures générés.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-6.png"
+  }
+]

@@ -1,5 +1,9 @@
 [
   {
+    "filename": "cgv-v1.json",
+    "description": "Ajouter des conditions générales de vente (CGV) sur les devis et factures dans la configuration société."
+  },
+  {
     "filename": "filtres-v1.json",
     "description": "Création, modification, application et suppression de filtres dans la section Clients."
   },
