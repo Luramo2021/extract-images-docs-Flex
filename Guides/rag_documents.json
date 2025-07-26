@@ -1,0 +1,178 @@
+[
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 1,
+    "title": "Accéder à la configuration",
+    "text": "Dans le menu, cliquez sur « Voir plus », puis sélectionnez « Configuration ».",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-1.png"
+  },
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 2,
+    "title": "Accéder aux sociétés",
+    "text": "Cliquez sur « Sociétés » dans le menu latéral pour afficher la liste des sociétés.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-2.png"
+  },
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 3,
+    "title": "Ouvrir la fiche société",
+    "text": "Cliquez sur le code société en bleu ou effectuez un double clic sur la ligne pour ouvrir la fiche société.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-3.png"
+  },
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 4,
+    "title": "Ajouter les CGV sur un devis",
+    "text": "Allez dans l’onglet « CGV DEVIS », collez vos CGV dans la zone prévue, puis cliquez sur « Enregistrer ».",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-4.png"
+  },
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 5,
+    "title": "Ajouter les CGV sur une facture",
+    "text": "Répétez les mêmes étapes, puis rendez-vous dans l’onglet « CGV FACTURE », collez vos CGV et enregistrez.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-5.png"
+  },
+  {
+    "procedure": "cgv-v1",
+    "description": "Ajouter les Conditions Générales de Vente (CGV) sur un devis ou une facture.",
+    "step": 6,
+    "title": "Confirmation de l’enregistrement",
+    "text": "Une fois vos CGV enregistrées, elles seront automatiquement intégrées aux devis et factures générés.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/CGV-etape-6.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 1,
+    "title": "Accéder à l’espace Clients",
+    "text": "Aller dans l’espace de travail « Clients » via le menu de gauche.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-1.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 2,
+    "title": "Ouvrir la rubrique Clients",
+    "text": "Cliquer sur la fonctionnalité « Clients » de la rubrique Configuration.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-2.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 3,
+    "title": "Accéder à la création de filtre",
+    "text": "Cliquer sur l’icône de filtre pour commencer la création.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-3.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 4,
+    "title": "Ajouter un nouveau filtre",
+    "text": "Cliquer sur le bouton « + » pour créer un nouveau filtre.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-4.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 5,
+    "title": "Définir les critères du filtre",
+    "text": "Choisir la propriété, la condition et la valeur (ex: statut = actif).",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-5.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 6,
+    "title": "Enregistrer le filtre",
+    "text": "Cliquer sur Enregistrer, nommer le filtre et valider.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-6.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 7,
+    "title": "Partager le filtre",
+    "text": "Cocher « Partagé » pour rendre le filtre visible aux autres utilisateurs.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-7.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 8,
+    "title": "Appliquer le filtre",
+    "text": "Cliquer sur le bouton « Appliquer » pour activer le filtre.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-8.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 9,
+    "title": "Vérifier l’ajout du filtre",
+    "text": "S’assurer que l’onglet correspondant au filtre s’affiche.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-9.png"
+  },
+  {
+    "procedure": "filtres-v1",
+    "description": "Création, modification, application et suppression de filtres dans la section Clients.",
+    "step": 10,
+    "title": "Supprimer un filtre",
+    "text": "Retourner sur l’icône filtre, cocher un filtre existant et cliquer sur « effacer ».",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/filtre-etape-10.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 1,
+    "title": "Accéder à l’espace souhaité",
+    "text": "Rendez-vous dans l’espace contenant l’élément à ajouter aux favoris (ex : Clients).",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-1.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 2,
+    "title": "Survoler le nom de la vue",
+    "text": "Placez la souris sur le nom de la vue ou de l’élément à ajouter aux favoris.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-2.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 3,
+    "title": "Cliquer sur l’étoile",
+    "text": "Cliquez sur l’icône étoile qui apparaît à gauche du nom. Une étoile orange indique que l’élément est désormais dans les favoris.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-3.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 4,
+    "title": "Vérifier dans le menu Favoris",
+    "text": "L’élément apparaît désormais dans la rubrique Favoris à gauche de l’écran.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-4.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 5,
+    "title": "Accès rapide par les Favoris",
+    "text": "Cliquez sur l’élément dans la rubrique Favoris pour y accéder rapidement.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-5.png"
+  },
+  {
+    "procedure": "favoris-v1",
+    "description": "Ajouter ou retirer un écran dans les favoris pour un accès rapide depuis l’accueil.",
+    "step": 6,
+    "title": "Retirer un Favori",
+    "text": "Pour retirer un favori, répétez l’opération et cliquez de nouveau sur l’étoile pour la désactiver.",
+    "image_url": "https://raw.githubusercontent.com/Luramo2021/extract-images-docs-Flex/main/Guides/Images/favoris-etape-6.png"
+  }
+]
