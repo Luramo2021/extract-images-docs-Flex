@@ -1,5 +1,3 @@
-# embed_chunks.py
-
 import os
 import json
 import glob
@@ -37,17 +35,28 @@ def get_embedding(text):
     )
     return response.data[0].embedding
 
+def split_into_chunks(text, chunk_size=1000):
+    """Divise le texte en morceaux de taille maximale 'chunk_size'."""
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), chunk_size):
+        chunks.append(" ".join(words[i:i + chunk_size]))
+    return chunks
+
 def main():
     procedures = load_procedures()
     output = []
 
     for proc in tqdm(procedures, desc="📌 Génération des embeddings"):
-        embedding = get_embedding(proc["content"])
-        output.append({
-            "filename": proc["filename"],
-            "content": proc["content"],
-            "embedding": embedding
-        })
+        chunks = split_into_chunks(proc["content"])
+        for idx, chunk in enumerate(chunks):
+            embedding = get_embedding(chunk)
+            output.append({
+                "filename": proc["filename"],
+                "chunk_index": idx,  # Ajout d'un index pour chaque chunk
+                "chunk": chunk,
+                "embedding": embedding
+            })
 
     with open("embeddings.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
