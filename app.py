@@ -57,7 +57,7 @@ def search():
 
     # Si on trouve le fichier, charger les étapes correspondantes
     if file_to_fetch:
-        with open(f"Guides/Images/{file_to_fetch}", "r", encoding="utf-8") as f:
+        with open(f"Guides/{file_to_fetch}", "r", encoding="utf-8") as f:
             procedure_steps = json.load(f)
 
         response = f"Voici les étapes pour {question} :\n\n"
