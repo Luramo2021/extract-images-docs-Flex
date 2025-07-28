@@ -22,8 +22,8 @@ def get_embedding(text):
     )
     return response.data[0].embedding
 
-@app.route("/search", methods=["POST"])
-def search():
+@app.route("/search-chunks", methods=["POST"])
+def search_chunks():
     data = request.get_json()
     question = data.get("question")
     if not question:
@@ -42,8 +42,16 @@ def search():
     top_chunks = sorted(similarities, reverse=True, key=lambda x: x[0])[:3]
     result = [chunk[1] for chunk in top_chunks]
 
-    # Ici vous pouvez utiliser la similarité pour rechercher la bonne procédure
-    similarity = top_chunks[0][0]  # La meilleure similarité
+    return jsonify(result)
+
+@app.route("/search-procedure", methods=["POST"])
+def search_procedure():
+    data = request.get_json()
+    question = data.get("question")
+    similarity = data.get("similarity")
+
+    if not question or similarity is None:
+        return jsonify({"error": "Missing question or similarity"}), 400
 
     # Rechercher la procédure correspondante dans procedures_index.json
     with open("Guides/procedures-index.json", "r", encoding="utf-8") as f:
@@ -51,21 +59,21 @@ def search():
 
     file_to_fetch = None
     for procedure in procedures_index:
-        if similarity >= 0.7 and "cgv" in procedure["filename"].lower():  # Critère de similarité
+        if similarity >= 0.7 and "cgv" in procedure["filename"].lower():  # Critère basé sur la similarité
             file_to_fetch = procedure["filename"]
             break
 
     # Si on trouve le fichier, charger les étapes correspondantes
     if file_to_fetch:
-        with open(f"Guides/{file_to_fetch}", "r", encoding="utf-8") as f:
+        with open(f"Guides/Images/{file_to_fetch}", "r", encoding="utf-8") as f:
             procedure_steps = json.load(f)
 
+        # Construire la réponse avec les étapes de la procédure
         response = f"Voici les étapes pour {question} :\n\n"
         for step in procedure_steps:
             response += f"{step['step']}. {step['title']}\n"
             response += f"{step['text']}\n"
             response += f"Image : {step['image_url']}\n\n"
-
         return jsonify({"response": response})
 
     return jsonify({"error": "Aucune procédure trouvée pour la question."})
