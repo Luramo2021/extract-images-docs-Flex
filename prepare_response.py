@@ -1,24 +1,26 @@
 import json
+import sys
+
+# Récupérer la question et la similarité depuis les arguments de ligne de commande
+question_similar = sys.argv[1]  # La question passée en argument
+similarity = float(sys.argv[2])  # La similarité passée en argument
 
 # Charger le fichier de procédure index
 with open("Guides/procedures-index.json", "r", encoding="utf-8") as f:
     procedures_index = json.load(f)
 
-# Supposons que la similarité entre la question et les chunks soit dans une variable similarity
-# Utiliser la similarité pour trouver le fichier correspondant
-question_similar = "ajouter des CGV sur un devis"  # Exemple de question
-
-# Rechercher le fichier correspondant dans procedures_index.json
+# Rechercher le fichier correspondant dans procedures_index.json en fonction de la similarité
 file_to_fetch = None
 for procedure in procedures_index:
-    if "cgv" in procedure["filename"].lower():  # Exemple d'un critère de correspondance
+    # Utiliser la similarité pour décider quel fichier correspond (par exemple)
+    if similarity >= 0.7 and "cgv" in procedure["filename"].lower():  # Ajuster le critère si nécessaire
         file_to_fetch = procedure["filename"]
         break
 
 # Si on trouve le fichier, on charge les étapes correspondantes
 if file_to_fetch:
     # Charger le fichier correspondant (ex : cgv-v1.json)
-    with open(f"Guides/Images/{file_to_fetch}", "r", encoding="utf-8") as f:
+    with open(f"Guides/{file_to_fetch}", "r", encoding="utf-8") as f:
         procedure_steps = json.load(f)
 
     # Construire la réponse
