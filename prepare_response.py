@@ -1,11 +1,16 @@
 import json
+import argparse
 
-# Charger le fichier de procédure index
-with open("Guides/procedures-index.json", "r", encoding="utf-8") as f:
+# Configuration de argparse pour accepter un argument de ligne de commande
+parser = argparse.ArgumentParser(description="Traiter le fichier JSON des procédures")
+parser.add_argument("json_file", help="Le fichier JSON des procédures à traiter")
+args = parser.parse_args()
+
+# Charger le fichier de procédure index passé en argument
+with open(args.json_file, "r", encoding="utf-8") as f:
     procedures_index = json.load(f)
 
 # Supposons que la similarité entre la question et les chunks soit dans une variable `similarity`
-# Utiliser la similarité pour trouver le fichier correspondant
 question_similar = "ajouter des CGV sur un devis"  # Exemple de question
 
 # Rechercher le fichier correspondant dans procedures_index.json
