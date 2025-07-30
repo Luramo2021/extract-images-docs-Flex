@@ -51,35 +51,14 @@ def search_chunks():
 def search_procedure():
     data = request.get_json()
     question = data.get("question")
-    similarity_threshold = data.get("similarity", 0.5)
+    filename = data.get("filename")  # récupéré depuis l'Assistant
+    similarity = data.get("similarity", 0.5)
 
-    if not question:
-        return jsonify({"error": "Missing question"}), 400
+    if not question or not filename:
+        return jsonify({"error": "Missing question or filename"}), 400
 
-    # Charger les métadonnées de toutes les procédures complètes
-    with open("Guides/procedures-index.json", "r", encoding="utf-8") as f:
-        procedures_index = json.load(f)
-
-    question_vector = np.array(get_embedding(question))
-
-    best_match = None
-    best_score = 0
-
-    for procedure in procedures_index:
-        if "embedding" not in procedure:
-            continue  # ignorer les entrées invalides
-        proc_vector = np.array(procedure["embedding"])
-        score = cosine_similarity([question_vector], [proc_vector])[0][0]
-
-        if score > similarity_threshold and score > best_score:
-            best_score = score
-            best_match = procedure
-
-    if not best_match:
-        return jsonify({"error": "Aucune procédure trouvée pour la question."})
-
-    # Lire les étapes de la procédure la plus pertinente
-    procedure_path = f"Guides/{best_match['filename']}"
+    # Lire les étapes de la procédure correspondant au fichier
+    procedure_path = f"Guides/{filename}"
     if not os.path.exists(procedure_path):
         return jsonify({"error": f"Fichier introuvable : {procedure_path}"}), 500
 
