@@ -33,9 +33,14 @@ def search_chunks():
     similarities = []
 
     for item in PROCEDURES:
+        if "embedding" not in item:
+            continue
         proc_vector = np.array(item["embedding"])
         sim = cosine_similarity([question_vector], [proc_vector])[0][0]
         similarities.append((sim, item))
+
+    if not similarities:
+        return jsonify([])
 
     top_chunks = sorted(similarities, reverse=True, key=lambda x: x[0])[:3]
     result = [chunk[1] for chunk in top_chunks]
@@ -61,6 +66,8 @@ def search_procedure():
     best_score = 0
 
     for procedure in procedures_index:
+        if "embedding" not in procedure:
+            continue  # ignorer les entrées invalides
         proc_vector = np.array(procedure["embedding"])
         score = cosine_similarity([question_vector], [proc_vector])[0][0]
 
@@ -72,14 +79,18 @@ def search_procedure():
         return jsonify({"error": "Aucune procédure trouvée pour la question."})
 
     # Lire les étapes de la procédure la plus pertinente
-    with open(f"Guides/{best_match['filename']}", "r", encoding="utf-8") as f:
+    procedure_path = f"Guides/{best_match['filename']}"
+    if not os.path.exists(procedure_path):
+        return jsonify({"error": f"Fichier introuvable : {procedure_path}"}), 500
+
+    with open(procedure_path, "r", encoding="utf-8") as f:
         procedure_steps = json.load(f)
 
     response = f"Voici les étapes pour {question} :\n\n"
     for step in procedure_steps:
-        response += f"{step['step']}. {step['title']}\n"
-        response += f"{step['text']}\n"
-        response += f"Image : {step['image_url']}\n\n"
+        response += f"{step.get('step', '')}. {step.get('title', '')}\n"
+        response += f"{step.get('text', '')}\n"
+        response += f"Image : {step.get('image_url', '')}\n\n"
 
     return jsonify({"response": response})
 
