@@ -59,7 +59,7 @@ def search_procedure():
 
     file_to_fetch = None
     for procedure in procedures_index:
-        if similarity >= 0.7 and "cgv" in procedure["filename"].lower():  # Critère basé sur la similarité
+        if similarity >= 0.5: # Critère basé sur la similarité
             file_to_fetch = procedure["filename"]
             break
 
